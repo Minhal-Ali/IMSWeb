@@ -1,0 +1,34 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.2.2.RELEASE'
+}
+
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'com.microsoft.sqlserver:mssql-jdbc'
+//    implementation 'com.microsoft.sqlserver:sqljdbc4:4.0'
+//    mplementation 'org.springframework.boot:spring-boot-starter-test'
+//    runtimeOnly 'com.h2database:h2'
+//    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+//        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+//    }
+//    testCompile group: 'com.microsoft.sqlserver', name: 'mssql-jdbc', version: '8.2.0.jre13'
+
+//    implementation 'mysql:mysql-connector-java'
+
+//    implementation 'org.springframework.boot:spring-boot-maven-plugin'
+}
+apply plugin: 'java'
+apply plugin: 'io.spring.dependency-management'
